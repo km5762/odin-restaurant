@@ -19,7 +19,7 @@ function createHeader() {
   header.appendChild(tartine);
   header.appendChild(nav);
 
-  document.body.appendChild(header);
+  document.body.insertBefore(header, document.body.firstChild);
 }
 
 export default createHeader;
