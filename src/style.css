@@ -99,3 +99,35 @@ em {
   overflow: hidden;
   max-width: 100%;
 }
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 1em;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 15em;
+  padding-left: 10em;
+  margin: 2em;
+}
+
+.item img {
+  height: 100%;
+  width: 15em;
+  border-end-end-radius: 1em;
+  border-top-right-radius: 1em;
+  background-position-x: -20px;
+}
+
+.item p {
+  text-align: center;
+}
+
+.item h2 {
+  font-size: min(3rem, 5vw);
+}

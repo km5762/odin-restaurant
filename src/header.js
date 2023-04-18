@@ -1,6 +1,9 @@
+import createHome from "./home";
+import createMenu from "./menu";
+
 function createHeader() {
   const header = document.createElement("header");
-
+  const content = document.querySelector(".content");
   const tartine = document.createElement("h1");
   tartine.textContent = "TARTINE";
 
@@ -18,6 +21,16 @@ function createHeader() {
   nav.appendChild(contact);
   header.appendChild(tartine);
   header.appendChild(nav);
+
+  home.addEventListener("click", () => {
+    content.textContent = "";
+    createHome();
+  });
+
+  menu.addEventListener("click", () => {
+    content.textContent = "";
+    createMenu();
+  });
 
   document.body.insertBefore(header, document.body.firstChild);
 }
