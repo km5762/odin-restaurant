@@ -12,8 +12,8 @@ function createHome() {
   imgContainer.classList.add("image-container");
   ourStory.classList.add("our-story");
 
-  img1.setAttribute("src", "../src/chad-liz-drink-wine.jpg");
-  img2.setAttribute("src", "../src/chad-turns-dough.jpg");
+  img1.setAttribute("src", "chad-liz-drink-wine.jpg");
+  img2.setAttribute("src", "chad-turns-dough.jpg");
 
   header.textContent = "Our Story...";
   header2.textContent = "TARTINE BEGAN WITH A MISSION:";

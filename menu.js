@@ -26,19 +26,19 @@ function createMenu() {
   const country = createMenuItem(
     "Country",
     "$7.75-12.75",
-    "../src/country.png"
+    "country.png"
   );
 
   const oat = createMenuItem(
     "Oat-Porridge",
     "$8.50-13.75",
-    "../src/oat-porridge.png"
+    "oat-porridge.png"
   );
 
   const buttermilk = createMenuItem(
     "Buttermilk-Loaf",
     "$12.75",
-    "../src/buttermilk-loaf.png"
+    "buttermilk-loaf.png"
   );
 
   menuItems.appendChild(country);
