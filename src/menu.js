@@ -1,3 +1,23 @@
+function createMenuItem(name, price, image) {
+  const item = document.createElement("div");
+  const textContainer = document.createElement("div");
+  const itemName = document.createElement("h2");
+  const itemPrice = document.createElement("p");
+  const itemImg = document.createElement("img");
+
+  item.classList.add("item");
+  itemImg.setAttribute("src", image);
+
+  itemName.textContent = name;
+  itemPrice.textContent = price;
+
+  textContainer.appendChild(itemName).appendChild(itemPrice);
+  item.appendChild(textContainer);
+  item.appendChild(itemImg);
+
+  return item;
+}
+
 function createMenu() {
   const content = document.querySelector(".content");
   const menuItems = document.createElement("div");
@@ -25,26 +45,6 @@ function createMenu() {
   menuItems.appendChild(oat);
   menuItems.appendChild(buttermilk);
   content.appendChild(menuItems);
-}
-
-function createMenuItem(name, price, image) {
-  const item = document.createElement("div");
-  const textContainer = document.createElement("div");
-  const itemName = document.createElement("h2");
-  const itemPrice = document.createElement("p");
-  const itemImg = document.createElement("img");
-
-  item.classList.add("item");
-  itemImg.setAttribute("src", image);
-
-  itemName.textContent = name;
-  itemPrice.textContent = price;
-
-  textContainer.appendChild(itemName).appendChild(itemPrice);
-  item.appendChild(textContainer);
-  item.appendChild(itemImg);
-
-  return item;
 }
 
 export default createMenu;

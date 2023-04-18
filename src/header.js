@@ -1,5 +1,6 @@
 import createHome from "./home";
 import createMenu from "./menu";
+import createContact from "./contact";
 
 function createHeader() {
   const header = document.createElement("header");
@@ -30,6 +31,11 @@ function createHeader() {
   menu.addEventListener("click", () => {
     content.textContent = "";
     createMenu();
+  });
+
+  contact.addEventListener("click", () => {
+    content.textContent = "";
+    createContact();
   });
 
   document.body.insertBefore(header, document.body.firstChild);
